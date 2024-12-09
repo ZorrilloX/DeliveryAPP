@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Maps</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+</resources>

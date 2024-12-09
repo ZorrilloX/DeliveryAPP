@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/imgPedidoActual"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/btn_star_big_on"/>
+
+    <!-- Nombre del producto -->
+    <TextView
+        android:id="@+id/txtProductoNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nombre del producto"
+        android:textSize="16sp" />
+
+    <!-- Precio -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtProductoPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="$0.00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtProductoSubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="$0.00"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Botón para disminuir cantidad -->
+
+    <Button
+        android:id="@+id/btnDisminuir"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="-" />
+
+    <!-- Cantidad -->
+    <TextView
+        android:id="@+id/txtCantidad"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="16sp" />
+
+    <!-- Botón para aumentar cantidad -->
+    <Button
+        android:id="@+id/btnAumentar"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:text="+" />
+
+</LinearLayout>

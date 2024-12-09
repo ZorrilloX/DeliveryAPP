@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Imagen del producto -->
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/btn_star_big_on"/>
+
+    <!-- Información del producto -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/tvNombreProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Producto"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Descripción del producto -->
+        <TextView
+            android:id="@+id/tvDescripcionProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción del producto"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/tvPrecioProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$32"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Botón Añadir al carrito -->
+    <Button
+        android:id="@+id/btnAnadirCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir"
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@android:color/white" />
+</LinearLayout>

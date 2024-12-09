@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Lista de productos -->
+    <TextView
+        android:id="@+id/lblMiPedidoActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="mi pedido de (Restaurante)"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_carrito" />
+
+    <TextView
+        android:id="@+id/lblPrecioTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" TOTAL: aun no ordenas nada?"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <!-- Botón para recoger ubicación -->
+    <Button
+        android:id="@+id/btnUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recoger ubicación del mapa"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botón para realizar pedido -->
+    <TextView
+        android:id="@+id/lblMiUbicacionActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="av. 24 de septiembre -12,3342 43.2245"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btnOrdenar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ordenar"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

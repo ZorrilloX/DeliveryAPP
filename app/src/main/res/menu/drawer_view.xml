@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/IDuserName"
+        android:title="'juancito pinto'" />
+    <item
+        android:id="@+id/nav_restaurantes"
+
+        android:title="Restaurantes" />
+    <item
+        android:id="@+id/nav_pedidos"
+
+        android:title="Mis Pedidos" />
+    <item
+        android:id="@+id/nav_cerrar_sesion"
+        android:title="Cerrar Sesión" />
+</menu>

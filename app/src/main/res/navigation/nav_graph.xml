@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/restaurantesFragment">
+
+    <fragment
+        android:id="@+id/restaurantesFragment"
+        android:name="com.example.maps.cliente.ui.fragments.RestaurantesFragment"
+        android:label="Restaurantes"
+        tools:layout="@layout/fragment_restaurantes">
+        <action
+            android:id="@+id/action_restaurantesFragment_to_restauranteMenuFragment"
+            app:destination="@id/restauranteMenuFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_restaurantesFragment_to_ejemploFragment"
+            app:destination="@id/ejemploFragment" />
+        <action
+            android:id="@+id/action_restaurantesFragment_to_misPedidosFragments"
+            app:destination="@id/misPedidosFragments" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restauranteMenuFragment"
+        android:name="com.example.maps.cliente.ui.fragments.RestauranteMenuFragment"
+        android:label="Restaurante Menu"
+        tools:layout="@layout/fragment_restaurante_menu">
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_restauranteMenuFragment_to_pedidoFragment"
+            app:destination="@id/pedidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejemploFragment"
+        android:name="com.example.maps.cliente.ui.fragments.EjemploFragment"
+        android:label="EjemploFragment"
+        tools:layout="@layout/fragment_ejemplo"/>
+    <fragment
+        android:id="@+id/pedidoFragment"
+        android:name="com.example.maps.cliente.ui.fragments.CarritoFragment"
+        android:label="PedidoFragment"
+        tools:layout="@layout/fragment_cliente_pedido">
+        <action
+            android:id="@+id/action_pedidoFragment_to_restaurantesFragment2"
+            app:destination="@id/restaurantesFragment" />
+        <action
+            android:id="@+id/action_pedidoFragment_to_misPedidosFragments"
+            app:destination="@id/misPedidosFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/misPedidosFragments"
+        android:name="com.example.maps.cliente.ui.fragments.MisPedidosFragments"
+        android:label="MisPedidosFragments"
+        tools:layout="@layout/fragment_mis_pedidos"/>
+</navigation>
